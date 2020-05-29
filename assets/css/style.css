@@ -1,0 +1,56 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url("../images/img1.jpg");
+    background-position: center;
+    background-color: beige;
+}
+
+header {
+    text-align: center;
+    color: blue;
+}
+
+.text-18 {
+    font-size: 18px;
+}
+
+.back-clear {
+    padding: 8px 10px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.opacity-clear {
+    background-color: rgba(255, 255, 255, 0.562)
+}
+
+#cuadrado {
+    height: 200px;
+    width: 200px;
+    background-color: royalblue;
+    margin: auto;
+    transition-property: background-color, border-radius;
+    transition-duration: 1s;
+}
+
+#cuadrado:hover {
+    background-color: tomato;
+    border-radius: 100px;
+}
+
+#cuadrado2 {
+    height: 200px;
+    width: 200px;
+    color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+}
+
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:100px; top:50px;}
+}
